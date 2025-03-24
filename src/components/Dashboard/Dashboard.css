@@ -1,0 +1,67 @@
+/* General container styling with gradient */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #1a73e8, #34a853); /* Blue to green gradient */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Card styling with gradient */
+  .card {
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Card body styling */
+  .card-body {
+    padding: 20px;
+    cursor: pointer;
+  }
+  
+  /* Card title styling */
+  .card-title {
+    color: #1a73e8; /* Google Maps blue */
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .card:hover .card-title {
+    color: #34a853; /* Green on hover */
+  }
+  
+  /* Card text styling */
+  .card-text {
+    color: #5f6368; /* Gray text */
+    font-size: 14px;
+    line-height: 1.5;
+    transition: color 0.3s ease;
+  }
+  
+  .card:hover .card-text {
+    color: #202124; /* Darker text on hover */
+    pointer-events: all;
+  }
